@@ -9,11 +9,11 @@ class Piggy(object):
     def cha_cha(self):
         """The robot will cha cha/ dance"""
         for x in range(5):
-        right_rot()
-        time.sleep(.5)
-        left_rot()
-        time.sleep(.5)
-        stop()
+            right_rot()
+            time.sleep(.5)
+            left_rot()
+            time.sleep(.5)
+            stop()
 
     def pulse(self):
         """check for obstacles, drive fixed amount forward"""
