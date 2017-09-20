@@ -36,7 +36,7 @@ class Piggy(object):
         for ang in range(20, 160, 2):
             servo(ang)
             time.sleep(.2)
-            
+
 
 
 p = Piggy()
