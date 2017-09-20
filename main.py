@@ -3,7 +3,7 @@ import time
 
 
 class Piggy(object):
-    def _init_(selfself):
+    def __init__(self):
         print("I AM ALIVE")
 
     def cha_cha(self):
