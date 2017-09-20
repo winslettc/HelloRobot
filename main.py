@@ -1,4 +1,4 @@
-import gopigo
+from gopigo import *
 import time
 
 
