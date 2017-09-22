@@ -38,6 +38,26 @@ class Piggy(object):
             time.sleep(.2)
 
 
-
+#MY APP
 p = Piggy()
-# p.cha_cha(
+# p.cha_cha
+
+def menu():
+    """This is a function that belongs to the file (main). Allows user to select definitions from a list of 1,2,3"""
+    while True:
+        input = raw_input("Press 1 for cruise \n Press 2 for pulse \n Press 3 for sweep")
+        if "1" in input:
+            p.cruise()
+        elif "2" in input:
+            p.pulse()
+        elif "3" in input:
+            p.servo_sweep()
+
+
+try:
+    menu()
+except Exception as ee:
+    print(ee)
+    """Built in stop command if robot is going crazy- more easily run code"""
+    from gopigo  import*
+    stop()
